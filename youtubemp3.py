@@ -28,8 +28,9 @@ canvas.pack()
 
 
 #image/background
-logo_img = PhotoImage(file='wp7313089.png')
-canvas.create_image(355, 200, image=logo_img)
+#logo_img = PhotoImage(file='wp7313089.png')
+logo_img = PhotoImage(file='mariya.png')
+canvas.create_image(200, 200, image=logo_img)
 #canvas.create_text(350, 250, text="Hello")
 
 #link field
