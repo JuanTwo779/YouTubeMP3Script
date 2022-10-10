@@ -23,7 +23,7 @@ def download_file():
 
 screen = Tk()
 title = screen.title('City Pop Me Up')
-canvas = Canvas(screen, width=710, height=400)
+canvas = Canvas(screen, width=400, height=710)
 canvas.pack()
 
 
@@ -35,23 +35,23 @@ canvas.create_image(200, 200, image=logo_img)
 
 #link field
 link_field = Entry(screen, width = 30)
-link_label = Label(screen, text="Enter URL to Download: ", font=('Arial', 12), bg="white") 
+link_label = Label(screen, text="Enter URL to Download: ", font=('Arial', 12, "bold")) 
 #add to canvas
-canvas.create_window(550, 150, window=link_label)
-canvas.create_window(550, 180, window=link_field)
+canvas.create_window(200, 450, window=link_label)
+canvas.create_window(200, 500, window=link_field)
 
 #Select Path for saving file
-path_label = Label(screen, text="Select Path For Download", font=('Arial', 12), bg="white")
+path_label = Label(screen, text="Select Path For Download", font=('Arial', 12, "bold"))
 select_btn = Button(screen, text="Select", command=select_path)
 #Add to window
-canvas.create_window(550, 210, window=path_label)
-canvas.create_window(550, 250, window=select_btn)
+canvas.create_window(200, 550, window=path_label)
+canvas.create_window(200, 600, window=select_btn)
 
 
 
 #download buttons
 download_btn = Button(screen, text="Download File", command=download_file)
 #add to canvas
-canvas.create_window(550, 300, window=download_btn)
+canvas.create_window(200, 650, window=download_btn)
 
 screen.mainloop()
